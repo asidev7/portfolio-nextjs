@@ -5,111 +5,97 @@ import { Badge } from "@/components/ui/badge";
 import { Layers } from "lucide-react";
 
 const projectsPage = () => {
-  // PROJECTS DATA
+  // DONNÉES DES PROJETS
   const Projects = [
     {
-      title: "Devzone - A community chat app for devs",
+      title: "Mon Portfolio - idohouaugustin.com",
       description:
-        `DevZone is the ultimate chat platform for developers
-to connect, collaborate, and code together. Join the conversation and level up your coding journey.`,
-      tags: ["Zustand", "Supabase", "Shadcn Ui", "Nextjs"],
+        "Mon portfolio en ligne, présentant mes compétences en développement web, mobile, et en intelligence artificielle.",
+      tags: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+      link: "https://idohouaugustin.com",
+    },
+    {
+      title: "LaZone237 - E-commerce",
+      description:
+        "Un site e-commerce pour acheter et vendre des produits en ligne, adapté aux besoins des utilisateurs au Cameroun.",
+      tags: ["Next.js", "React", "MongoDB", "Stripe"],
+      link: "https://lazone237.com",
+    },
+    {
+      title: "BTECH Academy - Site de présentation",
+      description:
+        "Un site vitrine pour BTECH Academy, offrant des formations en développement web et en technologie.",
+      tags: ["WordPress", "HTML", "CSS"],
+      link: "https://btechnacademy.com",
+    },
+    {
+      title: "Diabetes Management - Projet de fin d'année 2023",
+      description:
+        "Un système de gestion de diabète conçu pour surveiller, analyser et optimiser la prise en charge des patients.",
+      tags: ["Django", "Python", "SQLite", "API REST"],
+      link: "https://github.com/taqui-786/diabetes-management",
+    },
+    {
+      title: "Celtis Ariya - Gestion des événements et du tourisme au Bénin",
+      description:
+        "Une plateforme de gestion d'événements et de services touristiques pour promouvoir le tourisme au Bénin.",
+      tags: ["React", "Node.js", "Express", "MongoDB"],
+      link: "https://celtisariya.com",
+    },
+    {
+      title: "ASITECH - Plateforme en ligne",
+      description:
+        "Le site officiel de ASITECH, un service de développement web, mobile, et d'IA, ainsi que des solutions en marketing digital.",
+      tags: ["Next.js", "React", "Django", "MongoDB"],
+      link: "https://aasitech.online",
+    },
+    {
+      title: "Devzone - Une application de chat communautaire pour développeurs",
+      description:
+        "DevZone est la plateforme de chat ultime pour les développeurs afin de se connecter, collaborer et coder ensemble.",
+      tags: ["Next.js", "Zustand", "Supabase", "Shadcn Ui"],
       link: "https://devzone-ti.vercel.app/",
     },
-   
     {
-      title: "itZmyLink- One Page many Links",
+      title: "itZmyLink - Un seul lien pour tous vos profils sociaux",
       description:
-        "itZmyLink is a simple platform where user can create a personalized page to showcase all your social media profiles in one place. ",
-      tags: ["Nextjs", "Typescript", "Shadcn Ui"],
+        "itZmyLink permet aux utilisateurs de créer une page personnalisée pour afficher tous leurs profils sociaux en un seul endroit.",
+      tags: ["Next.js", "TypeScript", "Shadcn Ui"],
       link: "https://github.com/taqui-786/itZmyLink",
     },
     {
-      title: "GitEstimate- Github estimate worth generator",
+      title: "GitEstimate - Estimation de la valeur de votre compte GitHub",
       description:
-        "GitEstimate is a simple fun tool where user can generate their github estimate worth card just by entering their github username. ",
-      tags: ["Nextjs", "Typescript", "Shadcn Ui"],
+        "Un outil simple et amusant pour générer une carte d'estimation de la valeur de votre compte GitHub.",
+      tags: ["Next.js", "TypeScript", "Shadcn Ui"],
       link: "https://github.com/taqui-786/GitEstimate",
     },
     {
-      title: "Mixcn-ui- Reusable components for Nextjs",
+      title: "Mixcn-ui - Composants réutilisables pour Next.js",
       description:
-        "This is Nextjs app with a Collection of Nextjs Components - (Currently under Devlelopment) ",
-      tags: ["Nextjs", "Shadcnui", "Npx","Library"],
+        "Une collection de composants Next.js réutilisables (actuellement en développement).",
+      tags: ["Next.js", "Shadcn Ui", "Npx", "Library"],
       link: "https://mixcn-ui.vercel.app",
-    },
-    {
-      title: "Rupeespot- All deals Product in one place",
-      description:
-        "This is a free tool to check price history charts for millions of products for popular Indian stores such as Amazon and Flipkart. ",
-      tags: ["Nextjs", "Freelancing", "MySQL"],
-      link: "https://rupeespot.com/",
-    },
-    {
-      title: "Formcraft- Build Type-Safe Forms with Zero Effort",
-      description:
-        "Create production-ready forms with Zod validation, React Hook Form, and TypeScript. Design, customize, and deploy in minutes.",
-      tags: ["Nextjs", "Shadcnui", "Zod", "React Hook Form "],
-      link: "https://formcraft-ti.vercel.app/",
-    },
-    
-    {
-      title: "KryptoKapital- Investing in Cryptocurreny",
-      description:
-        "This is a platform for learning about cryptocurrency with many tools and festures. It is very big project. ",
-      tags: ["Nextjs", "Freelancing", "Supabase"],
-      link: "https://pro.kryptokapital.info/",
-    },
-    {
-      title: "FriendZ - A social media Platform",
-      description:
-        "FriendZ is a social media app made with modern tech stacks such as redis, Authjs etc. A user can Create, delete, like, comment Post. ",
-      tags: ["Redis", "Authjs", "Typescript", "Nextjs"],
-      link: "https://github.com/taqui-786/project-friendz",
-    },
-    {
-      title: "ChatApp- Simple instagram clone",
-      description:
-        "ChatApp is similar to instagram, you can create, edit, delete, like,comment, post and  Follow, unfollow users",
-      tags: ["Reactjs", "Javascript"],
-      link: "https://github.com/taqui-786/chatapp-api",
-    },
-    {
-      title: "Devletter - A Newsletter for devs",
-      description:
-        "Devletter ia a newsletter subscribing single page app made with Nextjs and Tailwindcss.",
-      tags: ["Nextjs", "Tailwindcss"],
-      link: "https://github.com/taqui-786/Devletter",
-    },
-    {
-      title: "CrouMaker - A Crousal Maker App",
-      description:
-        "Crousal Maker is a tool with in-built crousals templates edit and download it in any format.",
-      tags: ["Nextjs", "jsPDF", "html2canvas", "Shadcn Ui"],
-      link: "https://github.com/taqui-786/crousal-maker",
     },
   ];
 
   return (
-    // PROJECT PAGE
+    // PAGE DES PROJETS
     <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden">
-      <Badge className=" gap-2">
+      <Badge className="gap-2">
         <Layers className="h-5 w-5" />
-        Projects
+        Projets
       </Badge>
       <div className="flex flex-col gap-3">
-        <Heading>My Projects</Heading>
+        <Heading>Mes Projets</Heading>
         <FramerWrapper y={0} x={200}>
-          <p className=" font-poppins text-lg w-full text-primary max-sm:text-base">
-            I love to Build Cool Projects. Here, you&#x27;ll find a curated
-            collection of my creative endeavors and technical projects. Each
-            piece represents a journey of innovation, problem-solving, and
-            continuous learning. Feel free to explore this showcase of my
-            passion and expertise in action.
+          <p className="font-poppins text-lg w-full text-primary max-sm:text-base">
+            J'aime créer des projets intéressants et innovants. Vous trouverez ici une sélection de mes projets techniques et créatifs. Chaque projet représente un chemin d'innovation, de résolution de problèmes et d'apprentissage continu. N'hésitez pas à explorer cette vitrine de mes passions et de mes compétences en action.
           </p>
         </FramerWrapper>
       </div>
 
-      <div className=" w-full flex flex-row flex-wrap gap-3 max-lg:flex-col">
+      <div className="w-full flex flex-row flex-wrap gap-3 max-lg:flex-col">
         {Projects.map((val, indx) => {
           return <ProjectCards key={indx} value={val} num={indx} />;
         })}

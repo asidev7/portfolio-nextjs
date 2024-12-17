@@ -15,9 +15,9 @@ function TextRotator() {
           className="block text-left font-rubik text-lg sm:text-3xl leading-tight [&_li]:block animate-text-slide"
         >
           <li className="text-[#2f7df4]">Freelancer</li>
-          <li className="text-[#2f7df4]">Blogger</li>
-          <li className="text-[#2f7df4]">Gamer</li>
-          <li className="text-[#2f7df4]">Creator</li>
+          <li className="text-[#2f7df4]">Youtuber</li>
+          <li className="text-[#2f7df4]">Linux administrator</li>
+          <li className="text-[#2f7df4]">Windows server admin</li>
           <li className="text-[#2f7df4]">Student</li>
           <li className="text-[#2f7df4]">Contributer</li>
         </ul>
